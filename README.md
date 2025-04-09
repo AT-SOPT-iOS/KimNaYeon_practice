@@ -72,6 +72,28 @@ https://velog.io/@comdongsam/UITextField%EC%97%90-text-margin-%EB%84%A3%EA%B8%B0
 
 ### **#selector**
 
+- Objective-C 스타일의 메서드를 참조할 때 사용하는 문법
+    
+    ```swift
+    button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+    ```
+    
+- `#selector` 안에 들어가는 메서드는 @objc 키워드가 붙어 있어야 함
+    
+    ```swift
+    @objc 
+    func buttonTapped() {
+        print("버튼 탭됨!")
+    }
+    ```
+    
+
+<작동 원리>
+
+- `@objc func someFunction()` → Objective-C의 런타임에서도 이 함수를 인식할 수 있게 됨.
+- `#selector(someFunction)` → Objective-C 방식으로 이 함수를 지목(참조)함.
+- 결국 iOS 런타임에서 해당 함수가 호출됨.
+
 ### 터치 시 키보드 내려가는 함수
 
 | 요소 | 의미 |
