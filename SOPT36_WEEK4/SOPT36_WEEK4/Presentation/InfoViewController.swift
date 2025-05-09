@@ -60,13 +60,28 @@ final class InfoViewController: UIViewController {
     @objc private func editNicknameButtonTap() {
         Task {
             do {
-                let myNickname = try await UserService.shared.editNickname(with: EditNicknameRequestDTO(nickname: nickname))
+                let myNickname: () = try await UserService.shared.editNickname(with: EditNicknameRequestDTO(nickname: nickname), userId: keyword)
 
-                let nicknameText = myNickname.nickname
-                self.infoLabel.text = "내 닉네임:\n\(nicknameText)"
-
+                let alert = UIAlertController(
+                    title: "이메일 변경 성공",
+                    message: "이제 니 이름: \(nickname)",
+                    preferredStyle: .alert
+                )
+                
+                let okAction = UIAlertAction(title: "확인", style: .default)
+                alert.addAction(okAction)
+                self.present(alert, animated: true)
             } catch {
-                self.infoLabel.text = "조회 실패: \(error.localizedDescription)"
+                let alert = UIAlertController(
+                    title: "닉네임 변경 실패",
+                    message: error.localizedDescription,
+                    preferredStyle: .alert
+                )
+                let okAction = UIAlertAction(title: "확인", style: .default)
+                alert.addAction(okAction)
+                self.present(alert, animated: true)
+                
+                print("닉네임 변경 에러:", error)
             }
         }
     }
@@ -145,7 +160,7 @@ final class InfoViewController: UIViewController {
     
     private lazy var editNicknameButton = UIButton().then {
         $0.addTarget(self,
-                     action: #selector(searchButtonTap),
+                     action: #selector(editNicknameButtonTap),
                      for: .touchUpInside)
         $0.backgroundColor = .systemRed
         $0.setTitle("닉네임 수정", for: .normal)
