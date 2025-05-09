@@ -55,8 +55,8 @@ class UserService {
         }
     }
     
-    func editNickname(with dto: EditNicknameRequestDTO) async throws {
-        let api = UserAPI.editNickname(dto)
+    func editNickname(with dto: EditNicknameRequestDTO, userId: String) async throws {
+        let api = UserAPI.editNickname(dto, userId: userId)
         let (data, response) = try await URLSession.shared.data(for: api.request)
         
         guard let httpResponse = response as? HTTPURLResponse,
@@ -65,7 +65,7 @@ class UserService {
         }
         
         do {
-            let decoded = try JSONDecoder().decode(APIResponse<EmptyResponseDTO>.self, from: data)
+            _ = try JSONDecoder().decode(APIResponse<EmptyResponseDTO>.self, from: data)
             return
         } catch {
             print("디코딩 실패:", error)

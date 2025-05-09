@@ -10,7 +10,7 @@ import Foundation
 enum UserAPI {
     case getMyNickname(userId: String)
     case getNicknameList(keyword: String?)
-    case editNickname(EditNicknameRequestDTO)
+    case editNickname(EditNicknameRequestDTO, userId: String)
     
     var baseURL: URL {
         return NetworkConstant.baseURL
@@ -36,12 +36,12 @@ enum UserAPI {
     
     var headers: [String: String] {
         switch self {
-        case .getMyNickname(let userId):
+        case .getMyNickname(let userId), .editNickname(_, let userId):
             return [
                 "Content-Type": "Application/json",
                 "userId": userId
             ]
-        case .getNicknameList, .editNickname:
+        case .getNicknameList:
             return ["Content-Type": "Application/json"]
         }
     }
@@ -60,7 +60,7 @@ enum UserAPI {
         switch self {
         case .getMyNickname, .getNicknameList:
             return nil
-        case .editNickname(let dto):
+        case .editNickname(let dto, _):
             return try? JSONEncoder().encode(dto)
         }
     }
