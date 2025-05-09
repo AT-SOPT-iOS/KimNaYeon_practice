@@ -7,34 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		331A3B302DCD0BBD0071EF51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A3B152DCD0BBD0071EF51 /* AppDelegate.swift */; };
+		331A3B312DCD0BBD0071EF51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A3B172DCD0BBD0071EF51 /* SceneDelegate.swift */; };
+		331A3B322DCD0BBD0071EF51 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A3B192DCD0BBD0071EF51 /* NetworkError.swift */; };
+		331A3B332DCD0BBD0071EF51 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A3B252DCD0BBD0071EF51 /* LoginViewController.swift */; };
+		331A3B352DCD0BBD0071EF51 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A3B292DCD0BBD0071EF51 /* InfoViewController.swift */; };
+		331A3B3A2DCD0BBD0071EF51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 331A3B272DCD0BBD0071EF51 /* Assets.xcassets */; };
+		331A3B3B2DCD0BBD0071EF51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 331A3B2B2DCD0BBD0071EF51 /* LaunchScreen.storyboard */; };
+		331A3B3F2DCD0CC70071EF51 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A3B3E2DCD0CC20071EF51 /* AuthAPI.swift */; };
+		331A3B412DCD0CD10071EF51 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A3B402DCD0CCC0071EF51 /* AuthService.swift */; };
+		331A3B432DCD0CFA0071EF51 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A3B422DCD0CF60071EF51 /* UserApi.swift */; };
+		331A3B452DCD0D020071EF51 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A3B442DCD0CFD0071EF51 /* UserService.swift */; };
+		331A3B472DCD0D800071EF51 /* SignupRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A3B462DCD0D750071EF51 /* SignupRequestDTO.swift */; };
+		331A3B492DCD0E280071EF51 /* SignupResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A3B482DCD0E1F0071EF51 /* SignupResponseDTO.swift */; };
+		331A3B4B2DCD0E730071EF51 /* SigninRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A3B4A2DCD0E670071EF51 /* SigninRequestDTO.swift */; };
+		331A3B4E2DCD0ECF0071EF51 /* SigninResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A3B4D2DCD0EC60071EF51 /* SigninResponseDTO.swift */; };
+		331A3B502DCD0F870071EF51 /* MyNicknameResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A3B4F2DCD0F770071EF51 /* MyNicknameResponseDTO.swift */; };
+		331A3B542DCD1BBB0071EF51 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A3B532DCD1BB70071EF51 /* APIResponse.swift */; };
+		331A3B562DCD1D780071EF51 /* NicknameListResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A3B552DCD1D6E0071EF51 /* NicknameListResponseDTO.swift */; };
+		331A3B582DCD24760071EF51 /* EditNicknameRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A3B572DCD242E0071EF51 /* EditNicknameRequestDTO.swift */; };
+		331A3B5A2DCD258F0071EF51 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A3B592DCD25800071EF51 /* NetworkConstant.swift */; };
 		33A081CF2DC5E3C700E61923 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 33A081CE2DC5E3C700E61923 /* Then */; };
 		33A081D22DC5E3D400E61923 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 33A081D12DC5E3D400E61923 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		331A3B152DCD0BBD0071EF51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		331A3B162DCD0BBD0071EF51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		331A3B172DCD0BBD0071EF51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		331A3B192DCD0BBD0071EF51 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		331A3B252DCD0BBD0071EF51 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		331A3B272DCD0BBD0071EF51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		331A3B292DCD0BBD0071EF51 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		331A3B2A2DCD0BBD0071EF51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		331A3B3E2DCD0CC20071EF51 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		331A3B402DCD0CCC0071EF51 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		331A3B422DCD0CF60071EF51 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
+		331A3B442DCD0CFD0071EF51 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		331A3B462DCD0D750071EF51 /* SignupRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRequestDTO.swift; sourceTree = "<group>"; };
+		331A3B482DCD0E1F0071EF51 /* SignupResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResponseDTO.swift; sourceTree = "<group>"; };
+		331A3B4A2DCD0E670071EF51 /* SigninRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninRequestDTO.swift; sourceTree = "<group>"; };
+		331A3B4D2DCD0EC60071EF51 /* SigninResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninResponseDTO.swift; sourceTree = "<group>"; };
+		331A3B4F2DCD0F770071EF51 /* MyNicknameResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNicknameResponseDTO.swift; sourceTree = "<group>"; };
+		331A3B532DCD1BB70071EF51 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		331A3B552DCD1D6E0071EF51 /* NicknameListResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameListResponseDTO.swift; sourceTree = "<group>"; };
+		331A3B572DCD242E0071EF51 /* EditNicknameRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNicknameRequestDTO.swift; sourceTree = "<group>"; };
+		331A3B592DCD25800071EF51 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
 		33A081B52DC5E37B00E61923 /* SOPT36_WEEK4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOPT36_WEEK4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		33A081C72DC5E37D00E61923 /* Exceptions for "SOPT36_WEEK4" folder in "SOPT36_WEEK4" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 33A081B42DC5E37B00E61923 /* SOPT36_WEEK4 */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		33A081B72DC5E37B00E61923 /* SOPT36_WEEK4 */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				33A081C72DC5E37D00E61923 /* Exceptions for "SOPT36_WEEK4" folder in "SOPT36_WEEK4" target */,
-			);
-			path = SOPT36_WEEK4;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		33A081B22DC5E37B00E61923 /* Frameworks */ = {
@@ -49,10 +69,158 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		331A3B182DCD0BBD0071EF51 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				331A3B152DCD0BBD0071EF51 /* AppDelegate.swift */,
+				331A3B172DCD0BBD0071EF51 /* SceneDelegate.swift */,
+				331A3B162DCD0BBD0071EF51 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		331A3B1A2DCD0BBD0071EF51 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				331A3B192DCD0BBD0071EF51 /* NetworkError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		331A3B1B2DCD0BBD0071EF51 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				331A3B522DCD1B710071EF51 /* Network */,
+				331A3B3D2DCD0BFD0071EF51 /* Resource */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		331A3B1C2DCD0BBD0071EF51 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				331A3B462DCD0D750071EF51 /* SignupRequestDTO.swift */,
+				331A3B4A2DCD0E670071EF51 /* SigninRequestDTO.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		331A3B1D2DCD0BBD0071EF51 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				331A3B482DCD0E1F0071EF51 /* SignupResponseDTO.swift */,
+				331A3B4D2DCD0EC60071EF51 /* SigninResponseDTO.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		331A3B1E2DCD0BBD0071EF51 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				331A3B1C2DCD0BBD0071EF51 /* Request */,
+				331A3B1D2DCD0BBD0071EF51 /* Response */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		331A3B1F2DCD0BBD0071EF51 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				331A3B3E2DCD0CC20071EF51 /* AuthAPI.swift */,
+				331A3B402DCD0CCC0071EF51 /* AuthService.swift */,
+				331A3B1E2DCD0BBD0071EF51 /* DTO */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		331A3B202DCD0BBD0071EF51 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				331A3B572DCD242E0071EF51 /* EditNicknameRequestDTO.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		331A3B212DCD0BBD0071EF51 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				331A3B4F2DCD0F770071EF51 /* MyNicknameResponseDTO.swift */,
+				331A3B552DCD1D6E0071EF51 /* NicknameListResponseDTO.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		331A3B222DCD0BBD0071EF51 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				331A3B202DCD0BBD0071EF51 /* Request */,
+				331A3B212DCD0BBD0071EF51 /* Response */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		331A3B232DCD0BBD0071EF51 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				331A3B422DCD0CF60071EF51 /* UserApi.swift */,
+				331A3B442DCD0CFD0071EF51 /* UserService.swift */,
+				331A3B222DCD0BBD0071EF51 /* DTO */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		331A3B242DCD0BBD0071EF51 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				331A3B1F2DCD0BBD0071EF51 /* Auth */,
+				331A3B232DCD0BBD0071EF51 /* User */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		331A3B262DCD0BBD0071EF51 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				331A3B252DCD0BBD0071EF51 /* LoginViewController.swift */,
+				331A3B292DCD0BBD0071EF51 /* InfoViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		331A3B2F2DCD0BBD0071EF51 /* SOPT36_WEEK4 */ = {
+			isa = PBXGroup;
+			children = (
+				331A3B182DCD0BBD0071EF51 /* Application */,
+				331A3B262DCD0BBD0071EF51 /* Presentation */,
+				331A3B1B2DCD0BBD0071EF51 /* Global */,
+				331A3B242DCD0BBD0071EF51 /* Network */,
+				331A3B2B2DCD0BBD0071EF51 /* LaunchScreen.storyboard */,
+			);
+			path = SOPT36_WEEK4;
+			sourceTree = "<group>";
+		};
+		331A3B3D2DCD0BFD0071EF51 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				331A3B272DCD0BBD0071EF51 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		331A3B522DCD1B710071EF51 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				331A3B592DCD25800071EF51 /* NetworkConstant.swift */,
+				331A3B532DCD1BB70071EF51 /* APIResponse.swift */,
+				331A3B1A2DCD0BBD0071EF51 /* Error */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		33A081AC2DC5E37B00E61923 = {
 			isa = PBXGroup;
 			children = (
-				33A081B72DC5E37B00E61923 /* SOPT36_WEEK4 */,
+				331A3B2F2DCD0BBD0071EF51 /* SOPT36_WEEK4 */,
 				33A081B62DC5E37B00E61923 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,9 +247,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				33A081B72DC5E37B00E61923 /* SOPT36_WEEK4 */,
 			);
 			name = SOPT36_WEEK4;
 			packageProductDependencies = (
@@ -135,6 +300,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				331A3B3A2DCD0BBD0071EF51 /* Assets.xcassets in Resources */,
+				331A3B3B2DCD0BBD0071EF51 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,10 +312,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				331A3B302DCD0BBD0071EF51 /* AppDelegate.swift in Sources */,
+				331A3B312DCD0BBD0071EF51 /* SceneDelegate.swift in Sources */,
+				331A3B322DCD0BBD0071EF51 /* NetworkError.swift in Sources */,
+				331A3B332DCD0BBD0071EF51 /* LoginViewController.swift in Sources */,
+				331A3B5A2DCD258F0071EF51 /* NetworkConstant.swift in Sources */,
+				331A3B412DCD0CD10071EF51 /* AuthService.swift in Sources */,
+				331A3B452DCD0D020071EF51 /* UserService.swift in Sources */,
+				331A3B582DCD24760071EF51 /* EditNicknameRequestDTO.swift in Sources */,
+				331A3B472DCD0D800071EF51 /* SignupRequestDTO.swift in Sources */,
+				331A3B352DCD0BBD0071EF51 /* InfoViewController.swift in Sources */,
+				331A3B4B2DCD0E730071EF51 /* SigninRequestDTO.swift in Sources */,
+				331A3B562DCD1D780071EF51 /* NicknameListResponseDTO.swift in Sources */,
+				331A3B4E2DCD0ECF0071EF51 /* SigninResponseDTO.swift in Sources */,
+				331A3B3F2DCD0CC70071EF51 /* AuthAPI.swift in Sources */,
+				331A3B502DCD0F870071EF51 /* MyNicknameResponseDTO.swift in Sources */,
+				331A3B492DCD0E280071EF51 /* SignupResponseDTO.swift in Sources */,
+				331A3B432DCD0CFA0071EF51 /* UserApi.swift in Sources */,
+				331A3B542DCD1BBB0071EF51 /* APIResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		331A3B2B2DCD0BBD0071EF51 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				331A3B2A2DCD0BBD0071EF51 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		33A081C92DC5E37D00E61923 /* Debug */ = {
@@ -159,7 +355,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SOPT36_WEEK4/Info.plist;
+				INFOPLIST_FILE = SOPT36_WEEK4/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -185,7 +381,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SOPT36_WEEK4/Info.plist;
+				INFOPLIST_FILE = SOPT36_WEEK4/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
