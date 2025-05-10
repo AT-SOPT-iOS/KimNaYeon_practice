@@ -52,7 +52,7 @@ enum UserAPI {
             return nil
         case .getNicknameList(let keyword):
             guard let keword = keyword, !keword.isEmpty else { return nil }
-            return [URLQueryItem(name: "keyword", value: keword)]
+            return [URLQueryItem(name: "keyword", value: keyword)]
         }
     }
     
@@ -66,7 +66,18 @@ enum UserAPI {
     }
     
     var request: URLRequest {
-        var request = URLRequest(url: baseURL.appendingPathComponent(path))
+        var urlString = baseURL.appendingPathComponent(path).absoluteString
+        
+        if case . getNicknameList(let keyword) = self,
+           let keyword = keyword, !keyword.isEmpty,
+           let encoded = keyword.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) {
+            urlString += "?keyword=\(encoded)"
+        }
+        guard let url = URL(string: urlString) else {
+            fatalError("잘못된 URL")
+        }
+        
+        var request = URLRequest(url: url)
         request.httpMethod = method
         request.allHTTPHeaderFields = headers
         request.httpBody = body

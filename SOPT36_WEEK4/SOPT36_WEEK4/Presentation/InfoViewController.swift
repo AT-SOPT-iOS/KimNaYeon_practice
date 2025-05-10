@@ -60,7 +60,7 @@ final class InfoViewController: UIViewController {
     @objc private func editNicknameButtonTap() {
         Task {
             do {
-                let myNickname: () = try await UserService.shared.editNickname(with: EditNicknameRequestDTO(nickname: nickname), userId: keyword)
+                let _: () = try await UserService.shared.editNickname(with: EditNicknameRequestDTO(nickname: nickname), userId: keyword)
 
                 let alert = UIAlertController(
                     title: "이메일 변경 성공",
